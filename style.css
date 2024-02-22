@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: radial-gradient(circle at center center, rgba(255,255,255, 0),rgb(37,44,63)),repeating-linear-gradient(135deg, rgb(37,44,63) 0px, rgb(37,44,63) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(36,58,71) 0px, rgb(36,58,71) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(37,44,63),rgb(37,44,63));
+}
+
+header{ 
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    height: 15vh;
+    font-family: 'Anton', sans-serif;
+    position: fixed;
+    height: fit-content;
+    top:0 ;  /*notiene uso*/
+    left:0 ;  /*notiene uso*/
+    width: 100%;    /*siempre ajustar al 100 header para navbar*/
+    padding: 1.3rem 10%;
+    
+    z-index: 10;
+    
+
+}
+.logolink{
+    text-decoration: none;
+}
+.logoname{
+    text-decoration: none;
+    margin-top: -50px;
+    margin-left: 55px;
+    color: whitesmoke;
+    font-size: 2rem;
+    
+    transition: .75s ease;
+}
+.logoname:hover{
+    color: rgb(15, 247, 247);
+    padding-left: 10px;
+}
+
+.navbar a{     /* NO ES UL*/
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none; 
+    margin-left: 2rem; /* esto separa los LINKS*/
+    transition: .50s ease;
+
+}
+.navbar a:hover{
+    color: rgb(68, 144, 190);
+    padding-right: 10px;
+}
+.img-container{
+    height: 75vh; 
+    display: flex;
+    justify-content: center;
+    translate:0% 30%;
+}
+.img-box{
+    background: var(background-image)center;
+    background-size: cover;
+    background-position: center;
+    flex-basis: 150px;
+    position: relative;
+    transition: 400ms all ease;
+    filter: grayscale(90%) opacity(70%);
+    border-radius: 15px;
+    z-index: 10;
+    display: flex;
+    justify-content: left;
+    
+   
+}
+.img-box:nth-child(odd){
+    transform: translateY(-20PX);
+}
+.img-box:hover{
+    flex-basis: 400px;
+    filter: grayscale(0%) opacity(100%);
+}
+.carousel-title{
+  
+    font-family: 'Anton', sans-serif;
+    color: white;
+   
+    
+}
+.carousel-paragraph {
+    
+    color: white;
+}
+
+.color-change-2x {
+        -webkit-animation: color-change-2x 2s linear infinite alternate both;
+                animation: color-change-2x 2s linear infinite alternate both;
+    }
+
+
+ @-webkit-keyframes color-change-2x {
+    0% {
+      background: #1a1b1b;
+    }
+    100% {
+      background: #2b2991;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+      background: #2f8999;
+    }
+    100% {
+      background: #1f51af;
+    }
+  }
+  .features{
+    padding-top: 200px;
+  }
+  #smoked{
+    border-radius: 15px;
+  }
+
+
+  #paragraph1 {
+    color: white;
+  }
+  #second-feature{
+    flex-direction: row-reverse;
+  }
+
+  .card{
+    background-image: radial-gradient(circle at center center, rgba(255,255,255, 0),rgb(37,44,63)),repeating-linear-gradient(135deg, rgb(37,44,63) 0px, rgb(37,44,63) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(36,58,71) 0px, rgb(36,58,71) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(37,44,63),rgb(37,44,63));
+    border-color: white;
+    color: white;
+}
+
+#footer-name{
+    color: white;
+    font-weight: 500;
+    
+}
